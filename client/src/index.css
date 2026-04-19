@@ -1,0 +1,19 @@
+/* CLEAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* REMOVE WHITE BORDER ONLY */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+/* ROOT FULL WIDTH */
+#root {
+  min-height: 100vh;
+}
