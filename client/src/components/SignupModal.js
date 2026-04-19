@@ -6,7 +6,7 @@ function SignupModal({ setShow }) {
     const [form, setForm] = useState({ name: "", email: "", password: "" });
 
     const signup = async () => {
-        const res = await axios.post("http://localhost:5000/signup", form);
+        const res = await axios.post("https://notes-backend-3mph.onrender.com/signup", form);
 
         if (res.data.message === "Signup successful") {
             toast.success(res.data.message);

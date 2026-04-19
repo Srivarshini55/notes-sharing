@@ -7,7 +7,7 @@ function LoginModal({ setShow, setUser }) {
     const [password, setPassword] = useState("");
 
     const login = async () => {
-        const res = await axios.post("http://localhost:5000/login", { email, password });
+        const res = await axios.post("https://notes-backend-3mph.onrender.com/login", { email, password });
 
         if (res.data.token) {
             toast.success("Login successful");

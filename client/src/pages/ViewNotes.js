@@ -17,7 +17,7 @@ function ViewNotes() {
         }
 
         const res = await axios.get(
-            `http://localhost:5000/notes?subject_code=${subject}&regulation=${reg}`
+            `https://notes-backend-3mph.onrender.com/notes?subject_code=${subject}&regulation=${reg}`
         );
 
         if (res.data.length === 0) {
@@ -44,10 +44,10 @@ function ViewNotes() {
             {notes.map(n => (
                 <div key={n.id} style={card}>
                     <h4>Notes {n.note_number}</h4>
-                    <a href={`http://localhost:5000/uploads/${n.file_path}`} target="_blank">
+                    <a href={`https://notes-backend-3mph.onrender.com/uploads/${n.file_path}`} target="_blank">
                         <button style={btn}>View</button>
                     </a>
-                    <a href={`http://localhost:5000/download/${n.file_path}`}>
+                    <a href={`https://notes-backend-3mph.onrender.com/download/${n.file_path}`}>
                         <button style={btn}>Download</button>
                     </a>
                 </div>

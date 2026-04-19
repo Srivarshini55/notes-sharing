@@ -21,7 +21,7 @@ function Upload() {
         formData.append("subject_code", subject);
         formData.append("regulation", reg);
 
-        const res = await axios.post("http://localhost:5000/upload", formData);
+        const res = await axios.post("https://notes-backend-3mph.onrender.com/upload", formData);
         toast.success(res.data.message);
     };
 
