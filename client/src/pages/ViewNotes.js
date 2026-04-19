@@ -44,7 +44,7 @@ function ViewNotes() {
             {notes.map(n => (
                 <div key={n.id} style={card}>
                     <h4>Notes {n.note_number}</h4>
-                    <a href={`https://notes-backend-3mph.onrender.com/uploads/${n.file_path}`} target="_blank">
+                    <a href={`https://notes-backend-3mph.onrender.com/uploads/${n.file_path}`} target="_blank" rel="noreferrer">
                         <button style={btn}>View</button>
                     </a>
                     <a href={`https://notes-backend-3mph.onrender.com/download/${n.file_path}`}>
